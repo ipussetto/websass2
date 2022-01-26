@@ -54,13 +54,17 @@ section.contenido {
 
     h2 {
         color:snow;
-        font-size: 65px;
-        font-family: "amaranth";
+        font {
+            size: 65px;
+            family: "amaranth";
+        }
     }
     h3 {
-        font-size: 40px;
         color: rgb(243, 232, 243);
-        font-family: "Amaranth";
+        font {
+            size: 40px;
+            family: "Amaranth";
+        }
     }
     p {
         font-size: 30px;

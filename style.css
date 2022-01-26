@@ -57,14 +57,20 @@ section.contenido {
 
 section.contenido h2 {
   color: snow;
-  font-size: 65px;
-  font-family: "amaranth";
+}
+
+section.contenido h2 font {
+  size: 65px;
+  family: "amaranth";
 }
 
 section.contenido h3 {
-  font-size: 40px;
   color: #f3e8f3;
-  font-family: "Amaranth";
+}
+
+section.contenido h3 font {
+  size: 40px;
+  family: "Amaranth";
 }
 
 section.contenido p {
