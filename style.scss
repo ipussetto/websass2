@@ -8,34 +8,34 @@
     align-content: center;
     text-align: center;
     font-style: bold;   
-    position: relative;
     padding: 20px;
     
     & &__logo {
         position: center; 
         align-content:center;   
-        margin: 20px 0;
+        margin: 20px;
         padding: 15px;
         vertical-align: middle;
         max-width: 150px;
         display: inline;
 
         img.logo_img {
-        width: 250px;
+        width: 150px;
         }
         }
     
     & &__menu {
         color: $colorTitulos;
-        display: inline;   
+        display: inline flex;   
         margin: 20px; 
-        font-display: inline;
+        
         ul {
             li {
                     display: inline;
                     margin: 40px;
-                    padding: 1.5rem;
-                    background-color:mediumturquoise;
+                    padding:$boxPadding*2;
+                    background-color:$colorBotones;
+                    
                                                                         &:hover {
                         background-color: $colorPrincipal;
                         color:mediumvioletred bold;
@@ -47,11 +47,23 @@
           }    
     }
 
+
+
+
+
+.contenido {
+    position: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    }
+
+
+
 section.contenido {
     background-color:$colorPrincipal    ;
     color:powderblue;
     font-size: 25px;
-    padding: 15px;
+    padding: $boxPadding*3;
     margin: 0px;
     align-items: center;
     text-align: center;
@@ -83,8 +95,42 @@ section.contenido {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: $boxPadding*2;
     p {
         font-size: 14px;        
     }
 } 
+
+/* MIXIN */
+
+
+/* mixins */
+.btn a {
+    background-color: hotpink;    
+    text-decoration: none;
+}
+@mixin btn a {
+    display: inline flex;
+    border: 1px solid #333;
+    box-sizing: 50px;
+}
+
+.btn--talles {
+    @include btn;
+    background: red;
+}
+.btn--frase {
+    @include btn;
+    background: lightblue;
+}
+
+@mixin btn ($col, $bg) {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: $col;
+    background: $bg;
+}
+.btn--compra {
+    @include btn (blue, orange);
+}
