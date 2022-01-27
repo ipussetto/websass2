@@ -1,6 +1,10 @@
+@import 'variables';
+
+/*CONTENIDO*/
+
 .header {
     background-color: none;
-    color:indigo;
+    color:$colorTitulos;
     align-content: center;
     text-align: center;
     font-style: bold;   
@@ -22,7 +26,7 @@
         }
     
     & &__menu {
-        color: indigo;
+        color: $colorTitulos;
         display: inline;   
         margin: 20px; 
         font-display: inline;
@@ -32,8 +36,8 @@
                     margin: 40px;
                     padding: 1.5rem;
                     background-color:mediumturquoise;
-                                                                        a:hover {
-                        background-color: white;
+                                                                        &:hover {
+                        background-color: $colorPrincipal;
                         color:mediumvioletred bold;
                          }
                      
@@ -44,7 +48,7 @@
     }
 
 section.contenido {
-    background-color:rgb(128, 109, 172);
+    background-color:$colorPrincipal    ;
     color:powderblue;
     font-size: 25px;
     padding: 15px;
@@ -54,36 +58,33 @@ section.contenido {
 
     h2 {
         color:snow;
-        font {
-            size: 65px;
+        font: {
+            size: 35px;
             family: "amaranth";
         }
     }
     h3 {
         color: rgb(243, 232, 243);
-        font {
-            size: 40px;
+        font: {
+            size: 20px;
             family: "Amaranth";
         }
     }
     p {
-        font-size: 30px;
+        font-size: 15px;
     }
 }
 
 .row {
     padding: 50px 0 50px 0; 
     text-align: center;  
-    font-size: 40px;
-    
-         
+    font-size: 40px;         
 }
 
 footer {
     text-align: center;
-    color: slateblue;
-    background-color: rgb(243, 232, 243);
-}
-
-
-
+    padding: 10px;
+    p {
+        font-size: 14px;        
+    }
+} 
