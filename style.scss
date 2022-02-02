@@ -2,8 +2,8 @@
 
 /*CONTENIDO*/
 
-.header {
-    background-color: none;
+.header {   
+    background-color:hsl(265, 65%, 81%) ;
     color:$colorTitulos;
     align-content: center;
     text-align: center;
@@ -93,17 +93,20 @@ section.contenido {
     font-size: 40px;         
 }
 
-footer {
+.footer {
     text-align: center;
     padding: $boxPadding*2;
-    background-color: chartreuse;
+    margin-bottom: 0px;
+    background-color: hsl(265, 51%, 66%);
     p {
         font-size: 14px;        
     }
-    &__bg-light {
-        background-color: chartreuse;
-    }
+
 } 
+&__section {
+    background-color: chocolate;
+}
+
 
 /* MIXIN */
 
@@ -138,4 +141,60 @@ footer {
 .btn--compra {
     @include btn (blue, orange);
 }
+
+/* HTML > TALLES */@at-root
+.table .table {         
+    border: 2px solid rgb(153, 128, 182);
+    border-radius: none;
+    margin-left: 50px;
+    padding: 50;
+    width: 500px;
+    height: 160px;
+    font-family: unset;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* CONTACTO: FORMULARIO DE CONTACTO */
+
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.containerform {
+    size: 100%;
+    background: rgb(226, 205, 247);
+    margin: 5px;
+    padding: 5px;
+    vertical-align: middle;  
+    display: flex;
+    
+    justify-content: center;
+}
+
+form.form-horizontal {
+    height: 100%;
+    width: 80%;
+}
+
+.form-group {
+    color: #212529;
+    background-color: rgb(226, 205, 247);
+    border: none;
+    border-radius: .25rem;
+    transition: .15s ease-in-out,box-shadow .15s ease-in-out;
+    align-items: center; 
+
+
+/* galeria TEMATICOS */
+
+
 
