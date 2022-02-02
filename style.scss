@@ -96,8 +96,12 @@ section.contenido {
 footer {
     text-align: center;
     padding: $boxPadding*2;
+    background-color: chartreuse;
     p {
         font-size: 14px;        
+    }
+    &__bg-light {
+        background-color: chartreuse;
     }
 } 
 
@@ -134,3 +138,4 @@ footer {
 .btn--compra {
     @include btn (blue, orange);
 }
+
