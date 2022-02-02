@@ -1,4 +1,5 @@
 @import 'variables';
+/*RESETEO*/
 
 /*CONTENIDO*/
 
@@ -28,6 +29,7 @@
         color: $colorTitulos;
         display: inline flex;   
         margin: 20px; 
+        text-decoration: none;
         
         ul {
             li {
@@ -159,30 +161,29 @@ section.contenido {
 /* CONTACTO: FORMULARIO DE CONTACTO */
 
 
-.container{
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-
-.containerform {
-    size: 100%;
-    background: rgb(226, 205, 247);
+legend{
+    box-sizing: content-box  center;
+    background:indigo;
     margin: 5px;
     padding: 5px;
     vertical-align: middle;  
-    display: flex;
+    display: flex;    
+    margin: 1.6em auto;
+    gap: 1.6em;             
     
-    justify-content: center;
 }
 
 form.form-horizontal {
     height: 100%;
     width: 80%;
+        box-sizing: content-box  center;
+    background:indigo;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: middle;  
+    display: flex;    
+    margin: 1.6em auto;
+    gap: 1.6em;
 }
 
 .form-group {
