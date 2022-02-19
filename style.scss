@@ -1,9 +1,17 @@
 @import 'variables';
 /*RESETEO*/
+* {text-decoration: none;
+    padding: none;
+    margin: 0;
+    background-color: none;}
 
-
+.body {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
 .header {   
-    background-color:hsl(265, 65%, 81%) ;
+    background-color:snow;
     color:$colorTitulos;
     align-content: center;
     text-align: center;
@@ -57,14 +65,16 @@
     position: center;
     max-width: 100%;
     box-sizing: border-box;
-    }
+    align-content: center;
+    text-align: center;
+}
 
 section.contenido {
     background-color:$colorPrincipal;
     color:powderblue;
     font-size: 25px;
     padding: $boxPadding*3;
-    margin: 0px;
+    margin: 1px;
     align-items: center;
     text-align: center;
 
@@ -73,6 +83,7 @@ section.contenido {
         font: {
             size: 35px;
             family: "amaranth";
+            text-align: center;
         }
     }
 
@@ -82,6 +93,8 @@ section.contenido {
         font: {
             size: 20px;
             family: "Amaranth";
+            align-content: center;
+
         }
     p {
         font-size: 15px;
@@ -108,7 +121,7 @@ section.contenido {
 
 }
 
-/* HTML > TALLES */@at-root
+/* HTML > TALLES */
 .table .table {         
     border: 2px solid rgb(153, 128, 182);
     border-radius: none;
@@ -129,16 +142,18 @@ section.contenido {
     box-sizing: content-box;
     vertical-align: middle;  
     align-content: center;
-    margin: 0.6em auto;
-    gap: 1.6em; 
+    text-align: center;
+    gap: 3.6em; 
     margin: 0 auto;
     width: max-content;
-    padding: 3em;
-    border: 1px solid #CCC;
+    padding: 4em;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 0em;
+    width: 1000px;
+    background-color: snow;
 }
 
-&__form-group {
+.form-group {
     color: #212529;
     background-color: $colorPrincipal;
     border: none;
@@ -146,8 +161,3 @@ section.contenido {
     transition: .15s ease-in-out,box-shadow .15s ease-in-out;
     align-items: center; 
 }
-
-/* galeria TEMATICOS */
-
-
-

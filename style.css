@@ -1,7 +1,23 @@
 /*VARIABLES*/
 /*RESETEO*/
+* {
+  text-decoration: none;
+  padding: none;
+  margin: 0;
+  background-color: none;
+}
+
+.body {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .header {
-  background-color: #c9afee;
+  background-color: snow;
   color: indigo;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -50,6 +66,9 @@
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
 }
 
 section.contenido {
@@ -57,7 +76,7 @@ section.contenido {
   color: powderblue;
   font-size: 25px;
   padding: 15px;
-  margin: 0px;
+  margin: 1px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -68,12 +87,14 @@ section.contenido h2 {
   color: snow;
   font-size: 35px;
   font-family: "amaranth";
+  font-text-align: center;
 }
 
 section.contenido h3 {
   color: #f3e8f3;
   font-size: 20px;
   font-family: "Amaranth";
+  font-align-content: center;
 }
 
 section.contenido h3 p {
@@ -111,5 +132,36 @@ section.contenido .footer p {
 }
 
 /* CONTACTO: FORMULARIO DE CONTACTO */
-/* galeria TEMATICOS */
+.formulario {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  vertical-align: middle;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  gap: 3.6em;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 4em;
+  border: 1px solid white;
+  border-radius: 0em;
+  width: 1000px;
+  background-color: snow;
+}
+
+.form-group {
+  color: #212529;
+  background-color: #806dac;
+  border: none;
+  border-radius: .25rem;
+  -webkit-transition: .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
